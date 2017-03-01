@@ -19,7 +19,7 @@ specific language governing permissions and limitations
 under the License.
 */
 
-var proxy = require('de.plugin.email-composer.EmailComposerProxy'),
+var proxy = require('cordova-plugin-email-composer.EmailComposerProxy'),
     impl  = proxy.impl = {},
     WinMail = Windows.ApplicationModel.Email;
 
@@ -34,6 +34,7 @@ var proxy = require('de.plugin.email-composer.EmailComposerProxy'),
 impl.getDraftWithProperties = function (props) {
     var me = this;
 
+ alert('On y est !!');
     throw new Error("my error message", props);
     return new WinJS.Promise(function (complete) {
         var mail = new WinMail.EmailMessage();
