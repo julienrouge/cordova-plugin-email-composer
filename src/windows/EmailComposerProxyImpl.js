@@ -65,7 +65,7 @@ impl.getMailTo = function (props) {
 
     var options = '';
     if (props.subject !== '') {
-        options = options + '&subject=' + props.subject;
+        options = options + '&subject=BBBBBBBB' + props.subject;
     }
     if (props.body !== '') {
         options = options + '&body=' + props.body;
