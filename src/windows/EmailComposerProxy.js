@@ -52,6 +52,8 @@ exports.open = function (success, error, args) {
     var props = args[0],
         impl  = exports.impl;
 
+    console.log('Winmail......');
+    console.log(WinMail);
     if (WinMail) {
         impl.getDraftWithProperties(props)
             .then(WinMail.EmailManager.showComposeNewEmailAsync)
