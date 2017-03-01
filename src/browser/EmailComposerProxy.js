@@ -49,7 +49,7 @@ exports.open = function (success, error, args) {
         options = '';
 
     if (props.subject !== '') {
-        options = options + '&subject=' + props.subject;
+        options = options + '&subject=AAAAAAAA' + props.subject;
     }
 
     if (props.body !== '') {
