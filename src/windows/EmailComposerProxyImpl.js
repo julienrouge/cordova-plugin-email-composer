@@ -34,6 +34,7 @@ var proxy = require('cordova-plugin-email-composer.EmailComposerProxy'),
 impl.getDraftWithProperties = function (props) {
     var me = this;
 
+    throw new Error("my error message", props);
     return new WinJS.Promise(function (complete) {
         var mail = new WinMail.EmailMessage();
 
