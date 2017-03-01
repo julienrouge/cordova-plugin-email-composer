@@ -48,6 +48,7 @@ impl.getDraftWithProperties = function (props) {
         // BCC recipients
         me.setRecipients(props.bcc, mail.bcc);
         // attachments
+     console.log('attachments : ', props.attachments);
         me.setAttachments(props.attachments, mail)
 
         .then(function () {
